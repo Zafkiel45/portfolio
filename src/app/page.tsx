@@ -3,7 +3,19 @@ import { Nav } from "@/components/nav";
 import { Button } from "@/components/button";
 import { Main } from "@/components/main";
 import { StandOutText } from "@/components/stand_out_text";
+import { Card } from "@/components/card";
 // svgs
+import { HTMLSvg } from "@/components/svg/html";
+import { CSSSvg } from "@/components/svg/css";
+import { JavaScriptSvg } from "@/components/svg/javascript";
+import { ReactSVG } from "@/components/svg/react";
+import { TypeScriptSVG } from "@/components/svg/typescript";
+import { SassSVG } from "@/components/svg/sass";
+import { NextjsSVG } from "@/components/svg/nextjs";
+import { TailwindcssSVG } from "@/components/svg/tailwindcss";
+import { NodejsSVG } from "@/components/svg/node";
+import { SequelizeSVG } from "@/components/svg/sequelize";
+import { JavaSVG } from "@/components/svg/java";
 
 
 export default function Home() {
@@ -78,7 +90,133 @@ export default function Home() {
           </div>
           
         </div>
-
+        <div className="flex flex-col gap-5 w-full">
+          <div className="w-full">
+            <h1 className="text-2xl font-semibold">
+              Skills:
+            </h1>
+          </div>
+          <div>
+            <p>
+              Abaixo estão todas as tecnologias das
+              quais eu já tive contato, desde uma 
+              <StandOutText> simples interação até a criação de
+              projetos sólidos. </StandOutText>
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 items-center">
+            <Card 
+              technology={<HTMLSvg className="h-8 w-8"/>} 
+              technologyLevel="experiente" 
+              technologyName="HTML" 
+            >
+              HTML é uma linguagem de marcação que 
+              é considerada a espinha dorsal da web. 
+              Apesar de simples, possui modernidade e
+              é amplamente utilizado no mundo todo.
+            </Card>
+            <Card 
+              technology={<CSSSvg className="h-8 w-8"/>} 
+              technologyLevel="experiente" 
+              technologyName="CSS" 
+            >
+              CSS é uma linguagem de estilização para
+              a web. Assim como HTML, CSS é utilizado
+              por todo o mundo, até mesmo fora do 
+              escopo da web.
+            </Card>
+            <Card 
+              technology={<JavaScriptSvg className="h-8 w-8"/>} 
+              technologyLevel="experiente" 
+              technologyName="JavaScript" 
+            >
+              Extremamente versátil e utilizado, com 
+              uma comunidade extensa, JavaScript é 
+              uma das linguagens de programação mais
+              populares no mundo inteiro.
+            </Card>
+            <Card 
+              technology={<ReactSVG className="h-8 w-8"/>} 
+              technologyLevel="intermediário" 
+              technologyName="React" 
+            >
+              Criado e mantido pela a empresa meta, 
+              React é uma das bibliotecas mais 
+              populares para JavaScript. React é 
+              poderoso, moderno e flexível.
+            </Card>
+            <Card 
+              technology={<TypeScriptSVG className="h-8 w-8"/>} 
+              technologyLevel="intermediário" 
+              technologyName="TypeScript" 
+            >
+              TypeScript estende o JavaScript com mais
+              funcionalidade. Com tipagem estática, 
+              JavaScript fica mais seguro e mais fácil
+              de manter e criar aplicações.
+            </Card>
+            <Card 
+              technology={<SassSVG className="h-8 w-8"/>} 
+              technologyLevel="intermediário" 
+              technologyName="Sass" 
+            >
+              Sass é um pré-processador para CSS. Sass,
+              adiciona muitas funcionalidades adicionais
+              ao CSS, como variáveis e etc... Além disso, 
+              é bastante simples de utilizar.
+            </Card>
+            <Card 
+              technology={<TailwindcssSVG className="h-8 w-8"/>} 
+              technologyLevel="experiente" 
+              technologyName="Tailwindcss" 
+            >
+              Tailwindcss é um framework para CSS. 
+              Tailwindcss é poderoso, leve e prático. CSS
+              é levado a outro nível com Tailwindcss.
+              Tailwindcss é o futuro do CSS moderno.
+            </Card>
+            <Card 
+              technology={<NextjsSVG className="h-8 w-8"/>} 
+              technologyLevel="intermediário" 
+              technologyName="Next.js" 
+            >
+              Next.js é um framework para JavaScript  
+              poderoso e popular. Next.js é mantido
+              pela a gigante Vercel e é amplamente 
+              adotado pela as empresas.
+            </Card>
+            <Card 
+              technology={<NodejsSVG className="h-8 w-8"/>} 
+              technologyLevel="iniciante" 
+              technologyName="Node.js" 
+            >
+              Node.js é um runtime para JavaScript que
+              permite executar JavaScript fora da web.
+              Isto permite utiliza JavaScript no back-end,
+              ampliado a flexibilidade do JavaScript.
+            </Card>
+            <Card 
+              technology={<SequelizeSVG className="h-8 w-8"/>} 
+              technologyLevel="iniciante" 
+              technologyName="Sequelize" 
+            >
+              Sequelize é um ORM para Node.js. Sendo
+              uma tecnologia ainda em Desenvolvimento
+              , Sequelize já é uma das tecnologias mais 
+              requisitadas quando se trata de ORMs.
+            </Card>
+            <Card 
+              technology={<JavaSVG className="h-8 w-8"/>} 
+              technologyLevel="iniciante" 
+              technologyName="Java" 
+            >
+              Uma das tecnologias mais consolidadas 
+              no mundo. Java apenas cresce sendo 
+              utilizado na criação de sites, jogos e 
+              aplicações para desktop/mobile.
+            </Card>
+          </div>
+        </div>
       </Main>
     </>
   );

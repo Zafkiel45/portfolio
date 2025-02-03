@@ -5,8 +5,9 @@ export const Button = ({
     extraClasses,
     ...props
 }: buttonSignature) => {
+    // create variatios os button component;
     return (
-        <button {...props} className={`cursor-pointer w-fit h-fit ${extraClasses || ''}`}>
+        <button {...props} className={`cursor-pointer py-1 px-2 rounded-md w-fit h-fit ${extraClasses || ''}`}>
             {content}
         </button>
     )
