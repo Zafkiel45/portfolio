@@ -3,9 +3,8 @@ import { Nav } from "@/components/nav";
 import { Button } from "@/components/button";
 import { Main } from "@/components/main";
 import { StandOutText } from "@/components/stand_out_text";
-import { ContainerSVG } from "@/components/container_svg";
 // svgs
-import { MainSVG } from "@/components/svg/main_svg";
+
 
 export default function Home() {
   return (
@@ -31,21 +30,30 @@ export default function Home() {
         </Nav>
       </Header>
       <Main className="flex flex-col gap-5">
-        <div className="flex justify-center">
-          <div className="w-3/5 flex flex-col gap-2">
-            <h1 className="text-2xl">
+        <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
+          <div className="w-full flex items-center flex-col gap-4">
+            <h1 className="text-4xl text-center">
               <StandOutText>Desenvolvedor</StandOutText> <br />
-              <StandOutText>Front-End...</StandOutText>
+              <StandOutText>Front-End</StandOutText>
             </h1>
-            <p className="text-base">
-              Criando sites modernos 
-              com excelência utilizando tecnologias de ponta.
+            <p className="text-base text-center">
+              Criando sites <StandOutText>modernos </StandOutText>
+              com <StandOutText>excelência</StandOutText> utilizando 
+              <StandOutText> tecnologias de ponta.</StandOutText>
             </p>
           </div>
-          <ContainerSVG className="w-2/5 h-full">
-            <MainSVG className="w-full h-full"/>
-          </ContainerSVG>
+          <div className="flex gap-2 items-center ">
+            <Button 
+              extraClasses="bg-[#00C8FF] rounded-md " 
+              content="Contato" 
+            />
+            <Button 
+              extraClasses="bg-white rounded-md text-black" 
+              content="Github" 
+            />
+          </div>
         </div>
+        {/* About me section */}
         <div className="flex flex-col gap-2">
           <div className="w-full">
             <h1 className="text-2xl font-semibold">
@@ -70,6 +78,7 @@ export default function Home() {
           </div>
           
         </div>
+
       </Main>
     </>
   );
