@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans} px-2 flex flex-col gap-10 text-white bg-[#0F0F0F] py-5 antialiased`}
+        className={`${openSans} flex flex-col text-white bg-[#0F0F0F] antialiased`}
       >
         {children}
       </body>

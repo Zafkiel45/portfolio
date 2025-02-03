@@ -23,7 +23,7 @@ import { JavaSVG } from "@/components/svg/java";
 export default function Home() {
   return (
     <>
-      <Header>
+      <Header extraClasses="pt-5 px-2 mb-5">
         <Nav extraClasses="justify-center gap-2">
           <Button 
             extraClasses="text-white hover:text-[#00FEFE] transition-colors" 
@@ -43,7 +43,7 @@ export default function Home() {
           />
         </Nav>
       </Header>
-      <Main className="flex flex-col gap-5">
+      <Main className="flex px-2 flex-col gap-10">
         <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
           <div className="w-full flex items-center flex-col gap-4">
             <h1 className="text-4xl text-center">
@@ -272,6 +272,18 @@ export default function Home() {
           </div>
         </div>
       </Main>
+      <footer className="bg-[#151515] px-2 py-5 flex items-center flex-col gap-3 mt-5 relative bottom-0 w-screen border-t border-t-[#444444] h-full">
+        <div>
+          <Link href={"https://github.com/Zafkiel45"}>Github</Link> -
+          <Link href={"https://www.tabnews.com.br/Programmer404"}> Tabnews</Link> - 
+          <Link href={"https://roadmap.sh/account"}> Roadmap.sh</Link> 
+        </div>
+        <div>
+          <p className="italic text-sm text-[#BEBEBE]">
+            todos os direitos reservados - 2025
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
