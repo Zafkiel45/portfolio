@@ -4,6 +4,7 @@ import { Button } from "@/components/button";
 import { Main } from "@/components/main";
 import { StandOutText } from "@/components/stand_out_text";
 import { Card } from "@/components/card";
+import { CardProject } from "@/components/card-project";
 // svgs
 import { HTMLSvg } from "@/components/svg/html";
 import { CSSSvg } from "@/components/svg/css";
@@ -90,6 +91,7 @@ export default function Home() {
           </div>
           
         </div>
+        {/* skills section */}
         <div className="flex flex-col gap-5 w-full">
           <div className="w-full">
             <h1 className="text-2xl font-semibold">
@@ -215,6 +217,33 @@ export default function Home() {
               utilizado na criação de sites, jogos e 
               aplicações para desktop/mobile.
             </Card>
+          </div>
+        </div>
+        {/* project section */}
+        <div className="flex flex-col gap-4">
+          <div>
+            <h1 className="font-semibold text-2xl">
+              Projetos:
+            </h1>
+          </div>
+          <div className="w-full">
+            <p className="text-base">
+              Uma lista dos meus principais projetos
+              e ferramentas. Todo os projetos estão 
+              disponíveis para o público visualizar.
+            </p>
+          </div>
+          <div>
+            <CardProject 
+              projectName="Projeto: To Do List" 
+              projectLinkName=" To do List" 
+              projectLink="https://next-todo-list-336m.vercel.app/"
+              projectTags="#next.js #react #tailwindcss #typescript"
+            >
+              Mantenha suas tarefas organizadas e 
+              atualizadas de forma eficiente, prática e 
+              flexível.  
+            </CardProject>
           </div>
         </div>
       </Main>
