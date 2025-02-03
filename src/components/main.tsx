@@ -1,14 +1,12 @@
 import { componentFatherSignature } from "@/types/components_father_signature";
 
-export const Header = ({
+export const Main = ({
     children,
-    extraClasses, 
     ...props
 }: componentFatherSignature) => {
-
     return (
-        <header {...props} className={`w-screen h-fit ${extraClasses || ''}`}>
+        <main {...props}>
             {children}
-        </header>
+        </main>
     )
 };
