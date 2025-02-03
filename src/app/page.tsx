@@ -5,6 +5,7 @@ import { Main } from "@/components/main";
 import { StandOutText } from "@/components/stand_out_text";
 import { Card } from "@/components/card";
 import { CardProject } from "@/components/card-project";
+import Link from "next/link";
 // svgs
 import { HTMLSvg } from "@/components/svg/html";
 import { CSSSvg } from "@/components/svg/css";
@@ -244,6 +245,30 @@ export default function Home() {
               atualizadas de forma eficiente, prática e 
               flexível.  
             </CardProject>
+          </div>
+        </div>
+        {/* contact section */}
+        <div className="flex flex-col gap-3">
+          <div className="w-full">
+            <h1 className="text-2xl font-semibold">Contato:</h1>
+          </div>
+          <div className="w-full">
+            Gostou do que viu ate agora? Que tal
+            contratar meus serviços e garantir 
+            um site moderno, responsivo, e bem
+            otimizado agora mesmo? Basta entrar
+            em contato comigo agora mesmo!
+          </div>
+          <div className="w-full flex items-center gap-3">
+            <Link className="bg-white text-black rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
+              <Button content="Whatsapp"/>
+            </Link>
+            <Link className="bg-white text-black rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
+              <Button content="Instagram"/>
+            </Link>
+            <Link className="bg-white text-black rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
+              <Button  content="Email"/>
+            </Link>
           </div>
         </div>
       </Main>
