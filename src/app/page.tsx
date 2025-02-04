@@ -107,9 +107,9 @@ export default function Home() {
               projetos sólidos. </StandOutText>
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 items-center">
+          <div className="flex flex-col sm:flex-row md:gap-5 sm:flex-wrap gap-3 items-center">
             <Card 
-              technology={<HTMLSvg className="h-8 w-8"/>} 
+              technology={<HTMLSvg className="h-9 w-9"/>} 
               technologyLevel="experiente" 
               technologyName="HTML" 
             >
@@ -119,7 +119,7 @@ export default function Home() {
               é amplamente utilizado no mundo todo.
             </Card>
             <Card 
-              technology={<CSSSvg className="h-8 w-8"/>} 
+              technology={<CSSSvg className="h-9 w-9"/>} 
               technologyLevel="experiente" 
               technologyName="CSS" 
             >
@@ -129,7 +129,7 @@ export default function Home() {
               escopo da web.
             </Card>
             <Card 
-              technology={<JavaScriptSvg className="h-8 w-8"/>} 
+              technology={<JavaScriptSvg className="h-9 w-9"/>} 
               technologyLevel="experiente" 
               technologyName="JavaScript" 
             >
@@ -139,7 +139,7 @@ export default function Home() {
               populares no mundo inteiro.
             </Card>
             <Card 
-              technology={<ReactSVG className="h-8 w-8"/>} 
+              technology={<ReactSVG className="h-9 w-9"/>} 
               technologyLevel="intermediário" 
               technologyName="React" 
             >
@@ -149,7 +149,7 @@ export default function Home() {
               poderoso, moderno e flexível.
             </Card>
             <Card 
-              technology={<TypeScriptSVG className="h-8 w-8"/>} 
+              technology={<TypeScriptSVG className="h-9 w-9"/>} 
               technologyLevel="intermediário" 
               technologyName="TypeScript" 
             >
@@ -159,7 +159,7 @@ export default function Home() {
               de manter e criar aplicações.
             </Card>
             <Card 
-              technology={<SassSVG className="h-8 w-8"/>} 
+              technology={<SassSVG className="h-9 w-9"/>} 
               technologyLevel="intermediário" 
               technologyName="Sass" 
             >
@@ -169,7 +169,7 @@ export default function Home() {
               é bastante simples de utilizar.
             </Card>
             <Card 
-              technology={<TailwindcssSVG className="h-8 w-8"/>} 
+              technology={<TailwindcssSVG className="h-9 w-9"/>} 
               technologyLevel="experiente" 
               technologyName="Tailwindcss" 
             >
@@ -179,7 +179,7 @@ export default function Home() {
               Tailwindcss é o futuro do CSS moderno.
             </Card>
             <Card 
-              technology={<NextjsSVG className="h-8 w-8"/>} 
+              technology={<NextjsSVG className="h-9 w-9"/>} 
               technologyLevel="intermediário" 
               technologyName="Next.js" 
             >
@@ -189,7 +189,7 @@ export default function Home() {
               adotado pela as empresas.
             </Card>
             <Card 
-              technology={<NodejsSVG className="h-8 w-8"/>} 
+              technology={<NodejsSVG className="h-9 w-9"/>} 
               technologyLevel="iniciante" 
               technologyName="Node.js" 
             >
@@ -199,7 +199,7 @@ export default function Home() {
               ampliado a flexibilidade do JavaScript.
             </Card>
             <Card 
-              technology={<SequelizeSVG className="h-8 w-8"/>} 
+              technology={<SequelizeSVG className="h-9 w-9"/>} 
               technologyLevel="iniciante" 
               technologyName="Sequelize" 
             >
@@ -209,7 +209,7 @@ export default function Home() {
               requisitadas quando se trata de ORMs.
             </Card>
             <Card 
-              technology={<JavaSVG className="h-8 w-8"/>} 
+              technology={<JavaSVG className="h-9 w-9"/>} 
               technologyLevel="iniciante" 
               technologyName="Java" 
             >
@@ -250,9 +250,9 @@ export default function Home() {
         {/* contact section */}
         <div className="flex flex-col gap-3">
           <div className="w-full">
-            <h1 className="text-2xl font-semibold">Contato:</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold">Contato:</h1>
           </div>
-          <div className="w-full">
+          <div className="w-full sm:text-lg">
             Gostou do que viu ate agora? Que tal
             contratar meus serviços e garantir 
             um site moderno, responsivo, e bem
@@ -260,13 +260,13 @@ export default function Home() {
             em contato comigo agora mesmo!
           </div>
           <div className="w-full flex items-center gap-3">
-            <Link className="bg-white text-black rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
+            <Link className="bg-white text-black sm:text-lg rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
               <Button content="Whatsapp"/>
             </Link>
-            <Link className="bg-white text-black rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
+            <Link className="bg-white text-black sm:text-lg rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
               <Button content="Instagram"/>
             </Link>
-            <Link className="bg-white text-black rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
+            <Link className="bg-white text-black  sm:text-lg rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
               <Button  content="Email"/>
             </Link>
           </div>

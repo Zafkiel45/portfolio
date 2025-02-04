@@ -32,7 +32,7 @@ export const Card = ({
     }, [])
 
     return (
-        <div className="w-full sm:max-w-72 h-56 flex flex-col sm:gap-5 gap-2 p-3 border border-[#444444] bg-[#151515] rounded-xl shadow-sm">
+        <div className="w-full md:basis-0 md:flex-grow md:flex-shrink md:max-w-full md:min-w-80 min-h-48 sm:max-h-56 sm:h-56 flex flex-col sm:gap-5 gap-2 p-3 border border-[#444444] bg-[#151515] rounded-xl shadow-sm">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div>
@@ -46,7 +46,7 @@ export const Card = ({
                     {technologyLevel}
                 </div>
             </div>
-            <div className="">
+            <div className="md:text-lg">
                 {children}
             </div>
         </div>
