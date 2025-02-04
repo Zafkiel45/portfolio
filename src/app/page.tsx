@@ -46,23 +46,23 @@ export default function Home() {
       <Main className="flex px-4 sm:px-6 flex-col gap-10">
         <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
           <div className="w-full flex items-center flex-col gap-4">
-            <h1 className="text-4xl text-center">
+            <h1 className="text-4xl sm:text-5xl text-center">
               <StandOutText>Desenvolvedor</StandOutText> <br />
               <StandOutText>Front-End</StandOutText>
             </h1>
-            <p className="text-base text-center">
+            <p className="text-base sm:text-lg text-center">
               Criando sites <StandOutText>modernos </StandOutText>
-              com <StandOutText>excelência</StandOutText> utilizando 
+              com <StandOutText>excelência</StandOutText> <br /> utilizando 
               <StandOutText> tecnologias de ponta.</StandOutText>
             </p>
           </div>
           <div className="flex gap-2 items-center ">
             <Button 
-              extraClasses="bg-[#00C8FF] rounded-md " 
+              extraClasses="bg-[#00C8FF] rounded-md  sm:text-lg" 
               content="Contato" 
             />
             <Button 
-              extraClasses="bg-white rounded-md text-black" 
+              extraClasses="bg-white rounded-md text-black sm:text-lg" 
               content="Github" 
             />
           </div>
