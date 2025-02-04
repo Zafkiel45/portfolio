@@ -43,14 +43,17 @@ export default function Home() {
           />
         </Nav>
       </Header>
-      <Main className="flex px-4 sm:px-6 flex-col gap-10">
+      <Main className="flex lg:px-10 px-4 sm:px-6 flex-col gap-10">
+        {/* main screen section */}
         <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
-          <div className="w-full flex items-center flex-col gap-4">
-            <h1 className="text-4xl sm:text-5xl text-center">
+          <div className="w-full flex items-center lg:gap-6 flex-col gap-4">
+            {/* main screen title */}
+            <h1 className="text-4xl lg:text-5xl  sm:text-5xl text-center">
               <StandOutText>Desenvolvedor</StandOutText> <br />
               <StandOutText>Front-End</StandOutText>
             </h1>
-            <p className="text-base sm:text-lg text-center">
+            {/* description main screen's title */}
+            <p className="text-base sm:text-lg lg:text-xl text-center">
               Criando sites <StandOutText>modernos </StandOutText>
               com <StandOutText>excelência</StandOutText> <br /> utilizando 
               <StandOutText> tecnologias de ponta.</StandOutText>
@@ -58,11 +61,11 @@ export default function Home() {
           </div>
           <div className="flex gap-2 items-center ">
             <Button 
-              extraClasses="bg-[#00C8FF] rounded-md  sm:text-lg" 
+              extraClasses="bg-[#00C8FF] rounded-md  lg:text-xl sm:text-lg" 
               content="Contato" 
             />
             <Button 
-              extraClasses="bg-white rounded-md text-black sm:text-lg" 
+              extraClasses="bg-white rounded-md text-black lg:text-xl sm:text-lg" 
               content="Github" 
             />
           </div>
