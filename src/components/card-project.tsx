@@ -29,10 +29,10 @@ export const CardProject = ({
     return (
         <div className="w-full min-h-48 max-h-fit flex flex-col gap-4 p-3 border border-[#444444] bg-[#151515] rounded-xl shadow-sm">
             <div className="w-full">
-                <h1 className="text-xl font-semibold">{projectName}</h1>
+                <h1 className="text-xl sm:text-2xl font-semibold">{projectName}</h1>
             </div>
             <div className="w-full">
-                <p className="text-base">
+                <p className="text-base sm:text-lg">
                     {children}
                 </p>
             </div>
@@ -48,7 +48,7 @@ export const CardProject = ({
                     </Link>
                 </p>
             </div>
-            <div className="text-sm flex items-center flex-wrap gap-2">
+            <div className="text-sm sm:text-base flex items-center flex-wrap gap-2">
                 {tags.map((tag, idx) => {
                     return (
                         <span className="text-[#61F6EF] px-2 rounded-md bg-[#0A4569]"  key={idx + 1}>

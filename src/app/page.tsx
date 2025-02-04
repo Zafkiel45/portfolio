@@ -223,12 +223,12 @@ export default function Home() {
         {/* project section */}
         <div className="flex flex-col gap-4">
           <div>
-            <h1 className="font-semibold text-2xl">
+            <h1 className="font-semibold sm:text-3xl text-2xl">
               Projetos:
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-base">
+            <p className="text-base sm:text-lg ">
               Uma lista dos meus principais projetos
               e ferramentas. Todo os projetos estão 
               disponíveis para o público visualizar.
