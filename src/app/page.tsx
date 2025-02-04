@@ -98,12 +98,12 @@ export default function Home() {
         {/* skills section */}
         <div className="flex flex-col gap-5 w-full">
           <div className="w-full">
-            <h1 className="text-2xl sm:text-3xl font-semibold">
+            <h1 className="text-2xl lg:text-4xl sm:text-3xl font-semibold">
               Skills:
             </h1>
           </div>
           <div>
-            <p className="sm:text-lg">
+            <p className="sm:text-lg lg:text-xl">
               Abaixo estão todas as tecnologias das
               quais eu já tive contato, desde uma 
               <StandOutText> simples interação até a criação de
