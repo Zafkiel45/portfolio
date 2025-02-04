@@ -226,12 +226,12 @@ export default function Home() {
         {/* project section */}
         <div className="flex flex-col gap-4">
           <div>
-            <h1 className="font-semibold sm:text-3xl text-2xl">
+            <h1 className="font-semibold sm:text-3xl lg:text-4xl text-2xl">
               Projetos:
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-base sm:text-lg ">
+            <p className="text-base sm:text-lg lg:text-xl ">
               Uma lista dos meus principais projetos
               e ferramentas. Todo os projetos estão 
               disponíveis para o público visualizar.
@@ -251,11 +251,11 @@ export default function Home() {
           </div>
         </div>
         {/* contact section */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col lg:gap-5 gap-3">
           <div className="w-full">
-            <h1 className="text-2xl sm:text-3xl font-semibold">Contato:</h1>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Contato:</h1>
           </div>
-          <div className="w-full sm:text-lg">
+          <div className="w-full sm:text-lg lg:text-xl">
             Gostou do que viu ate agora? Que tal
             contratar meus serviços e garantir 
             um site moderno, responsivo, e bem
@@ -263,26 +263,26 @@ export default function Home() {
             em contato comigo agora mesmo!
           </div>
           <div className="w-full flex items-center gap-3">
-            <Link className="bg-white text-black sm:text-lg rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
+            <Link className="bg-white text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
               <Button content="Whatsapp"/>
             </Link>
-            <Link className="bg-white text-black sm:text-lg rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
+            <Link className="bg-white text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
               <Button content="Instagram"/>
             </Link>
-            <Link className="bg-white text-black  sm:text-lg rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
+            <Link className="bg-white text-black  sm:text-lg  lg:text-xl rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
               <Button  content="Email"/>
             </Link>
           </div>
         </div>
       </Main>
       <footer className="bg-[#151515] px-4 sm:px-6 py-5 flex items-center flex-col gap-3 mt-5 relative bottom-0 w-screen border-t border-t-[#444444] h-full">
-        <div>
+        <div className="lg:text-lg">
           <Link href={"https://github.com/Zafkiel45"}>Github</Link> -
           <Link href={"https://www.tabnews.com.br/Programmer404"}> Tabnews</Link> - 
           <Link href={"https://roadmap.sh/account"}> Roadmap.sh</Link> 
         </div>
         <div>
-          <p className="italic text-sm text-[#BEBEBE]">
+          <p className="italic lg:text-base text-sm text-[#BEBEBE]">
             todos os direitos reservados - 2025
           </p>
         </div>
