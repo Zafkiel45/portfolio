@@ -23,27 +23,27 @@ import { JavaSVG } from "@/components/svg/java";
 export default function Home() {
   return (
     <>
-      <Header extraClasses="pt-5 px-2 mb-5">
+      <Header extraClasses="pt-5 px-4 sm:px-6 mb-5">
         <Nav extraClasses="justify-center gap-2">
           <Button 
-            extraClasses="text-white hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
             content="Sobre"
           />
           <Button 
-            extraClasses="text-white hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
             content="Skills"
           />
           <Button 
-            extraClasses="text-white hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
             content="Projetos"
           />
           <Button 
-            extraClasses="text-white hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
             content="Contato"
           />
         </Nav>
       </Header>
-      <Main className="flex px-2 flex-col gap-10">
+      <Main className="flex px-4 sm:px-6 flex-col gap-10">
         <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
           <div className="w-full flex items-center flex-col gap-4">
             <h1 className="text-4xl text-center">
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
         </div>
       </Main>
-      <footer className="bg-[#151515] px-2 py-5 flex items-center flex-col gap-3 mt-5 relative bottom-0 w-screen border-t border-t-[#444444] h-full">
+      <footer className="bg-[#151515] px-4 sm:px-6 py-5 flex items-center flex-col gap-3 mt-5 relative bottom-0 w-screen border-t border-t-[#444444] h-full">
         <div>
           <Link href={"https://github.com/Zafkiel45"}>Github</Link> -
           <Link href={"https://www.tabnews.com.br/Programmer404"}> Tabnews</Link> - 

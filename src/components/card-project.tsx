@@ -27,7 +27,7 @@ export const CardProject = ({
     }, []);
 
     return (
-        <div className="w-full max-h-48 flex flex-col gap-4 p-3 border border-[#444444] bg-[#151515] rounded-xl shadow-sm">
+        <div className="w-full min-h-48 max-h-fit flex flex-col gap-4 p-3 border border-[#444444] bg-[#151515] rounded-xl shadow-sm">
             <div className="w-full">
                 <h1 className="text-xl font-semibold">{projectName}</h1>
             </div>
