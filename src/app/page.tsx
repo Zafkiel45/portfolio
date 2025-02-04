@@ -23,22 +23,22 @@ import { JavaSVG } from "@/components/svg/java";
 export default function Home() {
   return (
     <>
-      <Header extraClasses="pt-5 px-4 sm:px-6 mb-5">
+      <Header extraClasses="pt-5 px-4 lg:px-10 sm:px-6 mb-5">
         <Nav extraClasses="justify-center gap-2">
           <Button 
-            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Sobre"
           />
           <Button 
-            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Skills"
           />
           <Button 
-            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Projetos"
           />
           <Button 
-            extraClasses="text-white sm:text-lg hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Contato"
           />
         </Nav>
