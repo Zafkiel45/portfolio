@@ -95,19 +95,19 @@ export default function Home() {
         {/* skills section */}
         <div className="flex flex-col gap-5 w-full">
           <div className="w-full">
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl sm:text-3xl font-semibold">
               Skills:
             </h1>
           </div>
           <div>
-            <p>
+            <p className="sm:text-lg">
               Abaixo estão todas as tecnologias das
               quais eu já tive contato, desde uma 
               <StandOutText> simples interação até a criação de
               projetos sólidos. </StandOutText>
             </p>
           </div>
-          <div className="flex flex-col gap-3 items-center">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 items-center">
             <Card 
               technology={<HTMLSvg className="h-8 w-8"/>} 
               technologyLevel="experiente" 
