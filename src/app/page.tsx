@@ -23,37 +23,37 @@ import { JavaSVG } from "@/components/svg/java";
 export default function Home() {
   return (
     <>
-      <Header extraClasses="pt-5 px-4 lg:px-10 sm:px-6 mb-5">
+      <Header extraClasses="pt-5 px-4 2xl:px-14 lg:px-10 sm:px-6 2xl:mb-12 mb-5">
         <Nav extraClasses="justify-center gap-2">
           <Button 
-            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Sobre"
           />
           <Button 
-            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Skills"
           />
           <Button 
-            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Projetos"
           />
           <Button 
-            extraClasses="text-white sm:text-lg lg:text-xl hover:text-[#00FEFE] transition-colors" 
+            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
             content="Contato"
           />
         </Nav>
       </Header>
       <Main className="flex lg:px-10 px-4 sm:px-6 flex-col gap-10">
         {/* main screen section */}
-        <div className="flex h-[80vh] relative gap-2 top-24 flex-col items-center">
+        <div className="flex h-[80vh] relative 2xl:gap-5 gap-2 top-24 flex-col items-center">
           <div className="w-full flex items-center lg:gap-6 flex-col gap-4">
             {/* main screen title */}
-            <h1 className="text-4xl lg:text-5xl  sm:text-5xl text-center">
+            <h1 className="text-4xl lg:text-5xl 2xl:text-6xl sm:text-5xl text-center">
               <StandOutText>Desenvolvedor</StandOutText> <br />
               <StandOutText>Front-End</StandOutText>
             </h1>
             {/* description main screen's title */}
-            <p className="text-base sm:text-lg lg:text-xl text-center">
+            <p className="text-base sm:text-lg 2xl:text-2xl lg:text-xl text-center">
               Criando sites <StandOutText>modernos </StandOutText>
               com <StandOutText>excelência</StandOutText> <br /> utilizando 
               <StandOutText> tecnologias de ponta.</StandOutText>
@@ -61,24 +61,24 @@ export default function Home() {
           </div>
           <div className="flex gap-2 items-center ">
             <Button 
-              extraClasses="bg-[#00C8FF] rounded-md  lg:text-xl sm:text-lg" 
+              extraClasses="bg-[#00C8FF] rounded-md 2xl:text-2xl  lg:text-xl sm:text-lg" 
               content="Contato" 
             />
             <Button 
-              extraClasses="bg-white rounded-md text-black lg:text-xl sm:text-lg" 
+              extraClasses="bg-white rounded-md text-black 2xl:text-2xl lg:text-xl sm:text-lg" 
               content="Github" 
             />
           </div>
         </div>
         {/* About me section */}
-        <div className="flex flex-col sm:gap-4 gap-2">
+        <div className="flex flex-col sm:gap-4 2xl:gap-6 gap-2">
           <div className="w-full">
-            <h1 className="text-2xl lg:text-4xl sm:text-3xl font-semibold">
+            <h1 className="text-2xl 2xl:text-5xl lg:text-4xl sm:text-3xl font-semibold">
               Sobre mim:
             </h1>
           </div>
           <div>
-            <p className="sm:text-lg lg:text-xl">
+            <p className="sm:text-lg 2xl:text-2xl lg:text-xl">
               Opa! Eu me chamo Murilo e eu sou atualmente um 
               <StandOutText> desenvolvedor Front-End.</StandOutText>
               <br />
@@ -96,14 +96,14 @@ export default function Home() {
           
         </div>
         {/* skills section */}
-        <div className="flex flex-col gap-5 w-full">
+        <div className="flex flex-col 2xl:gap-10 gap-5 w-full">
           <div className="w-full">
-            <h1 className="text-2xl lg:text-4xl sm:text-3xl font-semibold">
+            <h1 className="text-2xl 2xl:text-5xl lg:text-4xl sm:text-3xl font-semibold">
               Skills:
             </h1>
           </div>
           <div>
-            <p className="sm:text-lg lg:text-xl">
+            <p className="sm:text-lg 2xl:text-2xl lg:text-xl">
               Abaixo estão todas as tecnologias das
               quais eu já tive contato, desde uma 
               <StandOutText> simples interação até a criação de
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row md:gap-5 sm:flex-wrap gap-3 items-center">
             <Card 
-              technology={<HTMLSvg className="h-9 w-9"/>} 
+              technology={<HTMLSvg className="h-11 w-11"/>} 
               technologyLevel="experiente" 
               technologyName="HTML" 
             >
@@ -122,7 +122,7 @@ export default function Home() {
               é amplamente utilizado no mundo todo.
             </Card>
             <Card 
-              technology={<CSSSvg className="h-9 w-9"/>} 
+              technology={<CSSSvg className="h-11 w-11"/>} 
               technologyLevel="experiente" 
               technologyName="CSS" 
             >
@@ -132,7 +132,7 @@ export default function Home() {
               escopo da web.
             </Card>
             <Card 
-              technology={<JavaScriptSvg className="h-9 w-9"/>} 
+              technology={<JavaScriptSvg className="h-11 w-11"/>} 
               technologyLevel="experiente" 
               technologyName="JavaScript" 
             >
@@ -142,7 +142,7 @@ export default function Home() {
               populares no mundo inteiro.
             </Card>
             <Card 
-              technology={<ReactSVG className="h-9 w-9"/>} 
+              technology={<ReactSVG className="h-11 w-11"/>} 
               technologyLevel="intermediário" 
               technologyName="React" 
             >
@@ -152,7 +152,7 @@ export default function Home() {
               poderoso, moderno e flexível.
             </Card>
             <Card 
-              technology={<TypeScriptSVG className="h-9 w-9"/>} 
+              technology={<TypeScriptSVG className="h-11 w-11"/>} 
               technologyLevel="intermediário" 
               technologyName="TypeScript" 
             >
@@ -162,7 +162,7 @@ export default function Home() {
               de manter e criar aplicações.
             </Card>
             <Card 
-              technology={<SassSVG className="h-9 w-9"/>} 
+              technology={<SassSVG className="h-11 w-11"/>} 
               technologyLevel="intermediário" 
               technologyName="Sass" 
             >
@@ -172,7 +172,7 @@ export default function Home() {
               é bastante simples de utilizar.
             </Card>
             <Card 
-              technology={<TailwindcssSVG className="h-9 w-9"/>} 
+              technology={<TailwindcssSVG className="h-11 w-11"/>} 
               technologyLevel="experiente" 
               technologyName="Tailwindcss" 
             >
@@ -182,7 +182,7 @@ export default function Home() {
               Tailwindcss é o futuro do CSS moderno.
             </Card>
             <Card 
-              technology={<NextjsSVG className="h-9 w-9"/>} 
+              technology={<NextjsSVG className="h-11 w-11"/>} 
               technologyLevel="intermediário" 
               technologyName="Next.js" 
             >
@@ -192,7 +192,7 @@ export default function Home() {
               adotado pela as empresas.
             </Card>
             <Card 
-              technology={<NodejsSVG className="h-9 w-9"/>} 
+              technology={<NodejsSVG className="h-11 w-11"/>} 
               technologyLevel="iniciante" 
               technologyName="Node.js" 
             >
@@ -202,7 +202,7 @@ export default function Home() {
               ampliado a flexibilidade do JavaScript.
             </Card>
             <Card 
-              technology={<SequelizeSVG className="h-9 w-9"/>} 
+              technology={<SequelizeSVG className="h-11 w-11"/>} 
               technologyLevel="iniciante" 
               technologyName="Sequelize" 
             >
@@ -212,7 +212,7 @@ export default function Home() {
               requisitadas quando se trata de ORMs.
             </Card>
             <Card 
-              technology={<JavaSVG className="h-9 w-9"/>} 
+              technology={<JavaSVG className="h-11 w-11"/>} 
               technologyLevel="iniciante" 
               technologyName="Java" 
             >
@@ -224,14 +224,14 @@ export default function Home() {
           </div>
         </div>
         {/* project section */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col 2xl:gap-6 gap-4">
           <div>
-            <h1 className="font-semibold sm:text-3xl lg:text-4xl text-2xl">
+            <h1 className="font-semibold sm:text-3xl 2xl:text-5xl lg:text-4xl text-2xl">
               Projetos:
             </h1>
           </div>
           <div className="w-full">
-            <p className="text-base sm:text-lg lg:text-xl ">
+            <p className="text-base sm:text-lg 2xl:text-2xl lg:text-xl ">
               Uma lista dos meus principais projetos
               e ferramentas. Todo os projetos estão 
               disponíveis para o público visualizar.
@@ -253,9 +253,9 @@ export default function Home() {
         {/* contact section */}
         <div className="flex flex-col lg:gap-5 gap-3">
           <div className="w-full">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Contato:</h1>
+            <h1 className="text-2xl sm:text-3xl 2xl:text-5xl lg:text-4xl font-semibold">Contato:</h1>
           </div>
-          <div className="w-full sm:text-lg lg:text-xl">
+          <div className="w-full sm:text-lg 2xl:text-2xl lg:text-xl">
             Gostou do que viu ate agora? Que tal
             contratar meus serviços e garantir 
             um site moderno, responsivo, e bem
@@ -263,26 +263,26 @@ export default function Home() {
             em contato comigo agora mesmo!
           </div>
           <div className="w-full flex items-center gap-3">
-            <Link className="bg-white text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
+            <Link className="bg-white 2xl:text-2xl text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://api.whatsapp.com/send?phone=5583996364857&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."} >
               <Button content="Whatsapp"/>
             </Link>
-            <Link className="bg-white text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
+            <Link className="bg-white 2xl:text-2xl text-black sm:text-lg lg:text-xl rounded-md px-2" href={"https://www.instagram.com/murilo__silva_dev/"}>
               <Button content="Instagram"/>
             </Link>
-            <Link className="bg-white text-black  sm:text-lg  lg:text-xl rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
+            <Link className="bg-white 2xl:text-2xl text-black  sm:text-lg  lg:text-xl rounded-md px-2" href={"https://mail.google.com/mail/?view=cm&fs=1&to=murilosilvapb45@gmail.com&su=Olá, gostaria de entrar em contato&body=Corpo do Email"}>
               <Button  content="Email"/>
             </Link>
           </div>
         </div>
       </Main>
       <footer className="bg-[#151515] px-4 sm:px-6 py-5 flex items-center flex-col gap-3 mt-5 relative bottom-0 w-screen border-t border-t-[#444444] h-full">
-        <div className="lg:text-lg">
+        <div className="lg:text-lg 2xl:text-2xl">
           <Link href={"https://github.com/Zafkiel45"}>Github</Link> -
           <Link href={"https://www.tabnews.com.br/Programmer404"}> Tabnews</Link> - 
           <Link href={"https://roadmap.sh/account"}> Roadmap.sh</Link> 
         </div>
         <div>
-          <p className="italic lg:text-base text-sm text-[#BEBEBE]">
+          <p className="italic 2xl:text-xl lg:text-base text-sm text-[#BEBEBE]">
             todos os direitos reservados - 2025
           </p>
         </div>
