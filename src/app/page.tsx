@@ -68,14 +68,14 @@ export default function Home() {
           </div>
         </div>
         {/* About me section */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col sm:gap-4 gap-2">
           <div className="w-full">
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl sm:text-3xl font-semibold">
               Sobre mim:
             </h1>
           </div>
           <div>
-            <p>
+            <p className="sm:text-lg">
               Opa! Eu me chamo Murilo e eu sou atualmente um 
               <StandOutText> desenvolvedor Front-End.</StandOutText>
               <br />
