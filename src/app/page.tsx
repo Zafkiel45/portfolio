@@ -18,6 +18,7 @@ import { TailwindcssSVG } from "@/components/svg/tailwindcss";
 import { NodejsSVG } from "@/components/svg/node";
 import { SequelizeSVG } from "@/components/svg/sequelize";
 import { JavaSVG } from "@/components/svg/java";
+import { HeaderButton } from "@/components/header/button_header.component";
 
 
 export default function Home() {
@@ -25,22 +26,10 @@ export default function Home() {
     <>
       <Header extraClasses="pt-5 px-4 2xl:px-14 lg:px-10 sm:px-6 2xl:mb-12 mb-5">
         <Nav extraClasses="justify-center gap-2">
-          <Button 
-            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
-            content="Sobre"
-          />
-          <Button 
-            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
-            content="Skills"
-          />
-          <Button 
-            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
-            content="Projetos"
-          />
-          <Button 
-            extraClasses="text-white sm:text-lg 2xl:text-2xl lg:text-xl hover:text-[#00FEFE] transition-colors" 
-            content="Contato"
-          />
+          <HeaderButton target="sobre" content="Sobre"/>
+          <HeaderButton target="skills" content="Skills"/>
+          <HeaderButton target="projetos" content="Projetos"/>
+          <HeaderButton target="contato" content="Contanto"/>
         </Nav>
       </Header>
       <Main className="flex lg:px-10 px-4 sm:px-6 flex-col gap-10">
@@ -71,7 +60,7 @@ export default function Home() {
           </div>
         </div>
         {/* About me section */}
-        <div className="flex flex-col sm:gap-4 2xl:gap-6 gap-2">
+        <div id="sobre" className="flex flex-col sm:gap-4 2xl:gap-6 gap-2">
           <div className="w-full">
             <h1 className="text-2xl 2xl:text-5xl lg:text-4xl sm:text-3xl font-semibold">
               Sobre mim:
