@@ -20,6 +20,7 @@ import { SequelizeSVG } from "@/components/svg/sequelize";
 import { JavaSVG } from "@/components/svg/java";
 import { HeaderButton } from "@/components/header/button_header.component";
 import { MainScreen } from "@/components/main_screen/main_screen.component";
+import { AboutMe } from "@/components/about_me/about_me_section.component";
 
 
 export default function Home() {
@@ -37,30 +38,7 @@ export default function Home() {
         {/* main screen section */}
         <MainScreen/>
         {/* About me section */}
-        <div id="sobre" className="flex flex-col sm:gap-4 2xl:gap-6 gap-2">
-          <div className="w-full">
-            <h1 className="text-2xl 2xl:text-5xl lg:text-4xl sm:text-3xl font-semibold">
-              Sobre mim:
-            </h1>
-          </div>
-          <div>
-            <p className="sm:text-lg 2xl:text-2xl lg:text-xl">
-              Opa! Eu me chamo Murilo e eu sou atualmente um 
-              <StandOutText> desenvolvedor Front-End.</StandOutText>
-              <br />
-              <br />
-              Meu objetivo atual é <StandOutText>fortalecer os fundamentos</StandOutText>, 
-              aprimorar pontos que <StandOutText>precisam de refinamento</StandOutText>, 
-              e ir escalando pouco a pouco <StandOutText>rumo ao meu objetivo!</StandOutText>
-              <br />
-              <br />
-              A longo prazo eu almejo me tornar 
-              um <StandOutText>desenvolvedor Full-Stack</StandOutText>, 
-              cujo domina ambos os mundos: Front-End e Back-End.
-            </p>
-          </div>
-          
-        </div>
+        <AboutMe/>
         {/* skills section */}
         <div className="flex flex-col 2xl:gap-10 gap-5 w-full">
           <div className="w-full">
