@@ -19,6 +19,7 @@ import { NodejsSVG } from "@/components/svg/node";
 import { SequelizeSVG } from "@/components/svg/sequelize";
 import { JavaSVG } from "@/components/svg/java";
 import { HeaderButton } from "@/components/header/button_header.component";
+import { MainScreen } from "@/components/main_screen/main_screen.component";
 
 
 export default function Home() {
@@ -34,31 +35,7 @@ export default function Home() {
       </Header>
       <Main className="flex lg:px-10 px-4 sm:px-6 flex-col gap-10">
         {/* main screen section */}
-        <div className="flex h-[80vh] relative 2xl:gap-5 gap-2 top-24 flex-col items-center">
-          <div className="w-full flex items-center lg:gap-6 flex-col gap-4">
-            {/* main screen title */}
-            <h1 className="text-4xl lg:text-5xl 2xl:text-6xl sm:text-5xl text-center">
-              <StandOutText>Desenvolvedor</StandOutText> <br />
-              <StandOutText>Front-End</StandOutText>
-            </h1>
-            {/* description main screen's title */}
-            <p className="text-base sm:text-lg 2xl:text-2xl lg:text-xl text-center">
-              Criando sites <StandOutText>modernos </StandOutText>
-              com <StandOutText>excelência</StandOutText> <br /> utilizando 
-              <StandOutText> tecnologias de ponta.</StandOutText>
-            </p>
-          </div>
-          <div className="flex gap-2 items-center ">
-            <Button 
-              extraClasses="bg-[#00C8FF] rounded-md 2xl:text-2xl  lg:text-xl sm:text-lg" 
-              content="Contato" 
-            />
-            <Button 
-              extraClasses="bg-white rounded-md text-black 2xl:text-2xl lg:text-xl sm:text-lg" 
-              content="Github" 
-            />
-          </div>
-        </div>
+        <MainScreen/>
         {/* About me section */}
         <div id="sobre" className="flex flex-col sm:gap-4 2xl:gap-6 gap-2">
           <div className="w-full">
