@@ -7,7 +7,7 @@ export const Header = ({
 }: componentFatherSignature) => {
 
     return (
-        <header {...props} className={`w-screen h-fit ${extraClasses || ''}`}>
+        <header {...props} className={`w-screen fixed z-50 h-fit ${extraClasses || ''}`}>
             {children}
         </header>
     )
