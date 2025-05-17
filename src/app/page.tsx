@@ -1,5 +1,3 @@
-import { Header } from "@/components/header";
-import { Nav } from "@/components/nav";
 import { Button } from "@/components/button";
 import { StandOutText } from "@/components/stand_out_text";
 import { Card } from "@/components/card";
@@ -17,21 +15,16 @@ import { TailwindcssSVG } from "@/components/svg/tailwindcss";
 import { NodejsSVG } from "@/components/svg/node";
 import { SequelizeSVG } from "@/components/svg/sequelize";
 import { JavaSVG } from "@/components/svg/java";
-import { HeaderButton } from "@/components/header/button_header.component";
 import { MainScreen } from "@/components/main_screen/main_screen.component";
 import { AboutMe } from "@/components/about_me/about_me_section.component";
+import { HeaderSection } from "@/components/header/header.components";
 
 export default function Home() {
   return (
     <>
-      <Header extraClasses="pt-5 px-4 2xl:px-14 lg:px-10 sm:px-6 2xl:mb-12 mb-5">
-        <Nav extraClasses="justify-center gap-2">
-          <HeaderButton target="sobre" content="Sobre" />
-          <HeaderButton target="skills" content="Skills" />
-          <HeaderButton target="projetos" content="Projetos" />
-          <HeaderButton target="contato" content="Contanto" />
-        </Nav>
-      </Header>
+      <header className="pt-5 px-4 2xl:px-14 flex items-center justify-center lg:px-10 sm:px-6 2xl:mb-12 mb-5 w-screen fixed z-50 h-fit">
+        <HeaderSection/>
+      </header>
       <main className="flex lg:px-16 px-4 sm:px-6 flex-col gap-10">
         {/* main screen section */}
         <MainScreen />

@@ -1,3 +1,4 @@
+'use client';
 import Link from "next/link";
 import { MainScreenButton } from "./button_main_screen.component";
 

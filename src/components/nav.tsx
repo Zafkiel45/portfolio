@@ -6,7 +6,7 @@ export const Nav = ({
     ...props
 }:componentFatherSignature) => {
     return (
-        <nav {...props} className={`flex items-center w-full h-fit ${extraClasses || ''}`}>
+        <nav {...props} className={` ${extraClasses || ''}`}>
             {children}
         </nav>
     )
