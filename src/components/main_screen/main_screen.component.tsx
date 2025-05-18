@@ -10,7 +10,7 @@ export function MainScreen() {
             <p>Desenvolvedor Full-Stack</p>
       </h1>
       </div>
-      <div className="text-center lg:text-lg">
+      <div className="text-center sm:text-lg">
         <p>
           Foco, aprendizado, destreza e determinação. Com esses pilares, <br />
           todo problema encontra sua solução.
