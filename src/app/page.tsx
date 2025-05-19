@@ -25,7 +25,7 @@ export default function Home() {
       <header className="pt-5 px-4 2xl:px-14 flex items-center justify-center lg:px-10 sm:px-6 2xl:mb-12 mb-5 w-screen fixed z-50 h-fit">
         <HeaderSection/>
       </header>
-      <main className="flex lg:px-20 xl:px-28 px-4 sm:px-10 flex-col gap-20">
+      <main className="flex lg:px-20 xl:px-28 px-4 sm:px-10 flex-col gap-32">
         {/* main screen section */}
         <MainScreen />
         {/* About me section */}
