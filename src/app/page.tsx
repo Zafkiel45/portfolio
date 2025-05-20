@@ -1,23 +1,10 @@
 import { Button } from "@/components/button";
-import { StandOutText } from "@/components/stand_out_text";
-import { Card } from "@/components/card";
 import { CardProject } from "@/components/card-project";
 import Link from "next/link";
-// svgs
-import { HTMLSvg } from "@/components/svg/html";
-import { CSSSvg } from "@/components/svg/css";
-import { JavaScriptSvg } from "@/components/svg/javascript";
-import { ReactSVG } from "@/components/svg/react";
-import { TypeScriptSVG } from "@/components/svg/typescript";
-import { SassSVG } from "@/components/svg/sass";
-import { NextjsSVG } from "@/components/svg/nextjs";
-import { TailwindcssSVG } from "@/components/svg/tailwindcss";
-import { NodejsSVG } from "@/components/svg/node";
-import { SequelizeSVG } from "@/components/svg/sequelize";
-import { JavaSVG } from "@/components/svg/java";
 import { MainScreen } from "@/components/main_screen/main_screen.component";
 import { AboutMe } from "@/components/about_me/about_me_section.component";
 import { HeaderSection } from "@/components/header/header.components";
+import { SkillsSection } from "@/components/skills/skills_section.components";
 
 export default function Home() {
   return (
@@ -31,122 +18,7 @@ export default function Home() {
         {/* About me section */}
         <AboutMe />
         {/* skills section */}
-        <div className="flex flex-col 2xl:gap-10 gap-5 w-full">
-          <div className="w-full">
-            <h1 className="text-2xl 2xl:text-5xl lg:text-4xl sm:text-3xl font-semibold">
-              Skills:
-            </h1>
-          </div>
-          <div>
-            <p className="sm:text-lg 2xl:text-2xl lg:text-xl">
-              Abaixo estão todas as tecnologias das quais eu já tive contato,
-              desde uma
-              <StandOutText>
-                simples interação até a criação de projetos sólidos.
-              </StandOutText>
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row md:gap-5 sm:flex-wrap gap-3 items-center">
-            <Card
-              technology={<HTMLSvg className="h-11 w-11" />}
-              technologyLevel="experiente"
-              technologyName="HTML"
-            >
-              HTML é uma linguagem de marcação que é considerada a espinha
-              dorsal da web. Apesar de simples, possui modernidade e é
-              amplamente utilizado no mundo todo.
-            </Card>
-            <Card
-              technology={<CSSSvg className="h-11 w-11" />}
-              technologyLevel="experiente"
-              technologyName="CSS"
-            >
-              CSS é uma linguagem de estilização para a web. Assim como HTML,
-              CSS é utilizado por todo o mundo, até mesmo fora do escopo da web.
-            </Card>
-            <Card
-              technology={<JavaScriptSvg className="h-11 w-11" />}
-              technologyLevel="experiente"
-              technologyName="JavaScript"
-            >
-              Extremamente versátil e utilizado, com uma comunidade extensa,
-              JavaScript é uma das linguagens de programação mais populares no
-              mundo inteiro.
-            </Card>
-            <Card
-              technology={<ReactSVG className="h-11 w-11" />}
-              technologyLevel="intermediário"
-              technologyName="React"
-            >
-              Criado e mantido pela a empresa meta, React é uma das bibliotecas
-              mais populares para JavaScript. React é poderoso, moderno e
-              flexível.
-            </Card>
-            <Card
-              technology={<TypeScriptSVG className="h-11 w-11" />}
-              technologyLevel="intermediário"
-              technologyName="TypeScript"
-            >
-              TypeScript estende o JavaScript com mais funcionalidade. Com
-              tipagem estática, JavaScript fica mais seguro e mais fácil de
-              manter e criar aplicações.
-            </Card>
-            <Card
-              technology={<SassSVG className="h-11 w-11" />}
-              technologyLevel="intermediário"
-              technologyName="Sass"
-            >
-              Sass é um pré-processador para CSS. Sass, adiciona muitas
-              funcionalidades adicionais ao CSS, como variáveis e etc... Além
-              disso, é bastante simples de utilizar.
-            </Card>
-            <Card
-              technology={<TailwindcssSVG className="h-11 w-11" />}
-              technologyLevel="experiente"
-              technologyName="Tailwindcss"
-            >
-              Tailwindcss é um framework para CSS. Tailwindcss é poderoso, leve
-              e prático. CSS é levado a outro nível com Tailwindcss. Tailwindcss
-              é o futuro do CSS moderno.
-            </Card>
-            <Card
-              technology={<NextjsSVG className="h-11 w-11" />}
-              technologyLevel="intermediário"
-              technologyName="Next.js"
-            >
-              Next.js é um framework para JavaScript poderoso e popular. Next.js
-              é mantido pela a gigante Vercel e é amplamente adotado pela as
-              empresas.
-            </Card>
-            <Card
-              technology={<NodejsSVG className="h-11 w-11" />}
-              technologyLevel="iniciante"
-              technologyName="Node.js"
-            >
-              Node.js é um runtime para JavaScript que permite executar
-              JavaScript fora da web. Isto permite utiliza JavaScript no
-              back-end, ampliado a flexibilidade do JavaScript.
-            </Card>
-            <Card
-              technology={<SequelizeSVG className="h-11 w-11" />}
-              technologyLevel="iniciante"
-              technologyName="Sequelize"
-            >
-              Sequelize é um ORM para Node.js. Sendo uma tecnologia ainda em
-              Desenvolvimento , Sequelize já é uma das tecnologias mais
-              requisitadas quando se trata de ORMs.
-            </Card>
-            <Card
-              technology={<JavaSVG className="h-11 w-11" />}
-              technologyLevel="iniciante"
-              technologyName="Java"
-            >
-              Uma das tecnologias mais consolidadas no mundo. Java apenas cresce
-              sendo utilizado na criação de sites, jogos e aplicações para
-              desktop/mobile.
-            </Card>
-          </div>
-        </div>
+        <SkillsSection/>
         {/* project section */}
         <div className="flex flex-col 2xl:gap-6 gap-4">
           <div>
