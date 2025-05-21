@@ -15,6 +15,89 @@ import { RustSVG } from "../svg/rust";
 import { AstroSVG } from "../svg/astro";
 
 export function SkillsSection() {
+
+const FRONT_END_SKILLS = [
+    {
+      name: "HTML",
+      icon: <HTMLSvg className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'HTML é uma linguagem de marcação para a web, simples de usar e muito poderoso também. HTML é considerado a espinha dorsal da web.'
+    },
+    {
+      name: "CSS",
+      icon: <CSSSvg className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'CSS é uma linguagem de estilização, utilizado para trazer designs de alto nível para a web. Moderno, flexível e poderoso!'
+    },
+    {
+      name: "JavaScript",
+      icon: <JavaScriptSvg className="w-full h-full"/>,
+      hasRoadmap: true,
+      roadmapUrl: '/roadmap/javascript',
+      description: 'Um das linguagens mais populares do mundo, tanto para Front-end, quanto para Backend.'
+    },
+    {
+      name: "TypeScript",
+      icon: <TypeScriptSVG className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'Typescript é superset para JavaScript, adicionando tipagem estática e muito mais para uma das linguagens mais usadas no mundo.'
+    },
+    {
+      name: "Tailwindcss",
+      icon: <TailwindcssSVG className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'Tailwincss é um framework para CSS, aprimorando a produtividade com CSS.'
+    },
+    {
+      name: "Next.js",
+      icon: <NextjsSVG className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'Next.js é um framework para JavaScript. Next.js é considerado uma das opção mais consolidadas na criação de sites modernos.'
+    },
+    {
+      name: "React",
+      icon: <ReactSVG className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'React é uma biblioteca para JavaScript, criado e mantido pela a Meta. React é a tecnologia que sustenta o Next.js por debaixo dos panos.'
+    },
+    {
+      name: "Astro",
+      icon: <AstroSVG className="w-full h-full"/>,
+      hasRoadmap: false,
+      roadmapUrl: '/#',
+      description: 'Astro é um framework para JavaScript moderno, leve e moderno. Astro é 0 JavaScript por padrão, permitindo a criação de sites ultra performáticos.'
+    },
+  ]
+const BACK_END_SKILLS = [
+  {
+    name: "Node.js",
+    icon: <NodejsSVG className="w-full h-full"/>,
+    hasRoadmap: false,
+    roadmapUrl: '/#',
+    description: 'Node.js é um runtime para JavaScript, cujo permite a execução de JavaScript fora da web.'
+  },
+  {
+    name: "Bun",
+    icon: <BunSVG className="w-full h-full"/>,
+    hasRoadmap: false,
+    roadmapUrl: '/#',
+    description: 'Bun é um runtime alternativo ao Node.js. Bun tem o proposito de ser um substituto do Node.js, provendo mas modernidade e segurança.'
+  },
+  {
+    name: "Rust",
+    icon: <RustSVG className="w-full h-full"/>,
+    hasRoadmap: true,
+    roadmapUrl: '/roadmap/rust',
+    description: 'Rust é uma linguagem de programação com foco em segurança e performance.'
+  },
+]
+
   return (
     <div className="flex flex-col 2xl:gap-10 gap-5 w-full">
       <div className="w-full">
@@ -40,112 +123,37 @@ export function SkillsSection() {
         <SkillContainer>
           <SkillSeparator title="Front-end" />
           <CardContainer>
-            <Card
-              technology={<HTMLSvg className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="HTML"
-              hasRoadmap={false}
-              url="/#"
-            >
-              HTML é uma linguagem de marcação para a web, simples de usar e
-              muito poderoso também. HTML é considerado a espinha dorsal da web.
-            </Card>
-            <Card
-              technology={<CSSSvg className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="CSS"
-              hasRoadmap={false}
-              url="/#"
-            >
-              CSS é uma linguagem de estilização, utilizado para trazer designs
-              de alto nível para a web. Moderno, flexível e poderoso!
-            </Card>
-            <Card
-              technology={<JavaScriptSvg className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="JavaScript"
-              hasRoadmap={true}
-              url="/roadmap/javascript"
-            >
-              Um das linguagens mais populares do mundo, tanto para Front-end,
-              quanto para Backend.
-            </Card>
-            <Card
-              technology={<TypeScriptSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="TypeScript"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Typescript é superset para JavaScript, adicionando tipagem
-              estática e muito mais para uma das linguagens mais usadas no
-              mundo.
-            </Card>
-            <Card
-              technology={<TailwindcssSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="Tailwindcss"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Tailwincss é um framework para CSS, aprimorando a produtividade
-              com CSS.
-            </Card>
-            <Card
-              technology={<NextjsSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="Next.js"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Next.js é um framework para JavaScript. Next.js é considerado uma
-              das opção mais consolidadas na criação de sites modernos.
-            </Card>
-            <Card
-              technology={<ReactSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="React"
-              hasRoadmap={false}
-              url="/#"
-            >
-              React é uma biblioteca para JavaScript, criado e mantido pela a
-              Meta. React é a tecnologia que sustenta o Next.js por debaixo dos
-              panos.
-            </Card>
-            <Card
-              technology={<AstroSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="Astro"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Astro é um framework para JavaScript moderno, leve e moderno. 
-              Astro é 0 JavaScript por padrão, permitindo a criação de sites 
-              ultra performáticos.
-            </Card>
+            {FRONT_END_SKILLS.map((item, idx) => {
+              return (
+                <Card 
+                  key={1 + idx}
+                  technology={item.icon} 
+                  hasRoadmap={item.hasRoadmap} 
+                  url={item.roadmapUrl} 
+                  technologyName={item.name} 
+                >
+                  {item.description}
+                </Card>
+              )
+            })}
           </CardContainer>
         </SkillContainer>
         <SkillContainer>
           <SkillSeparator title="Back-end" />
           <CardContainer>
-            <Card
-              technology={<NodejsSVG className="sm:h-10 sm:w-10 h-8 w-8" />}
-              technologyName="Node.js"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Node.js é um runtime para JavaScript, cujo permite a execução de
-              JavaScript fora da web.
-            </Card>
-            <Card
-              technology={<BunSVG className="sm:h-10 sm:w-10 h-8 w-8" />}
-              technologyName="Bun"
-              hasRoadmap={false}
-              url="/#"
-            >
-              Bun é um runtime alternativo ao Node.js. Bun tem o proposito de 
-              ser um substituto do Node.js, provendo mas modernidade e segurança.
-            </Card>
-            <Card
-              technology={<RustSVG className="sm:h-10 sm:w-10 h-8 w-8"  />}
-              technologyName="Rust"
-              hasRoadmap={true}
-              url="/roadmap/rust"
-            >
-              Rust é uma linguagem de programação com foco em segurança e performance. 
-            </Card>
+            {BACK_END_SKILLS.map((item, idx) => {
+              return (
+                <Card 
+                  hasRoadmap={item.hasRoadmap}
+                  technology={item.icon} 
+                  technologyName={item.name}
+                  url={item.roadmapUrl}
+                  key={1 + idx}
+                >
+                  {item.description}
+                </Card>
+              )
+            })}
           </CardContainer>
         </SkillContainer>
       </div>

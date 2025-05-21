@@ -21,7 +21,7 @@ export const Card = ({
       {hasRoadmap ? <div className="animate-pulse absolute -top-1 -right-1 h-3 w-3 bg-[#A3FF00] rounded-full"></div>:''}
       <div className="flex items-center justify-between">
         <div className="md:text-lg flex items-center gap-3">
-          <div>{technology}</div>
+          <div className="sm:h-10 sm:w-10 h-8 w-8">{technology}</div>
           <div className="font-medium 2xl:text-xl">{technologyName}</div>
         </div>
       </div>
