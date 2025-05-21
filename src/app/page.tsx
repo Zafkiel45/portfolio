@@ -3,15 +3,11 @@ import { CardProject } from "@/components/card-project";
 import Link from "next/link";
 import { MainScreen } from "@/components/main_screen/main_screen.component";
 import { AboutMe } from "@/components/about_me/about_me_section.component";
-import { HeaderSection } from "@/components/header/header.components";
 import { SkillsSection } from "@/components/skills/skills_section.components";
 
 export default function Home() {
   return (
     <>
-      <header className="pt-5 px-4 2xl:px-14 flex items-center justify-center lg:px-10 sm:px-6 2xl:mb-12 mb-5 w-screen fixed z-50 h-fit">
-        <HeaderSection/>
-      </header>
       <main className="flex lg:px-20 xl:px-28 min-[490px]:px-8 px-4  sm:px-10 flex-col gap-32">
         {/* main screen section */}
         <MainScreen />

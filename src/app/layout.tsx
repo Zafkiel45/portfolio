@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
- 
+import { HeaderSection } from "@/components/header/header.components";
+
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
@@ -21,6 +22,9 @@ export default function RootLayout({
       <body
         className={`${openSans} overflow-x-hidden flex flex-col text-[#e1e0e0] bg-[#000000] antialiased`}
       >
+        <header className="pt-5 px-4 2xl:px-14 flex items-center justify-center lg:px-10 sm:px-6 2xl:mb-12 mb-5 w-screen fixed z-50 h-fit">
+          <HeaderSection />
+        </header>
         {children}
       </body>
     </html>
