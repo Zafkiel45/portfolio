@@ -238,9 +238,10 @@ export default async function RoadmapRoute({
 
   return (
     <main className="flex lg:px-20 xl:px-28 min-[490px]:px-8 pb-5  px-4 sm:px-10 flex-col gap-32">
-      <div className="flex h-screen items-center">
+      {/* Main container */}
+      <div className="flex flex-col relative top-12 gap-5 sm:flex-row h-screen justify-center items-center">
         {/* Main Text Container */}
-        <div className="flex h-full relative 2xl:gap-5 gap-5 justify-center bottom-5 flex-col sm:gap-6">
+        <div className="flex h-fit relative 2xl:gap-5 gap-5 justify-center bottom-5 flex-col sm:gap-6">
           <div className="flex flex-col gap-4">
             <StandOutTitle isCentralized={false} title="Roadmap" />
             <StandOutDescription isCentralized={false}>
@@ -255,9 +256,12 @@ export default async function RoadmapRoute({
           </div>
         </div>
         {/* Svg of main container */}
-        <div className="hidden sm:block">
+        <div className="relative">
           <Image
             src={ScrumBoard}
+            height={500}
+            width={500}
+            className="max-h-60 sm:max-h-none"
             alt="A scrum board with two people maneging it"
           />
         </div>
