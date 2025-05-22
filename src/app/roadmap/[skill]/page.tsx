@@ -1,24 +1,13 @@
 import { StandOutDescription } from "@/components/nodes/standout_description";
 import { StandOutTitle } from "@/components/nodes/standout_title";
 import ScrumBoard from "../../../../public/svg/scrum_board.svg";
-import { RustSVG } from "@/components/svg/rust";
 import Image from "next/image";
 import { DoneSvg } from "../../../../public/svg/done";
 import { PendentSvg } from "../../../../public/svg/pendent";
-import { JavaScriptSvg } from "@/components/svg/javascript";
 import Link from "next/link";
 import { MainScreenButton } from "@/components/main_screen/button_main_screen.component";
-
-type Roadmap = {
-  name: string;
-  icon: React.JSX.Element;
-  goals: {
-    name: string;
-    isFinished: boolean;
-    startedAt: string;
-    finishedAt: string;
-  }[];
-};
+import { ROADMAPS } from "@/data/roadmap/roadmap.data";
+import type { Roadmap } from "@/types/roadmap.type";
 
 export default async function RoadmapRoute({
   params,
@@ -26,210 +15,9 @@ export default async function RoadmapRoute({
   params: Promise<{ skill: string }>;
 }) {
   const currentRoadmap: Roadmap[] = [];
-  const roadmaps: Roadmap[] = [
-    {
-      name: "rust",
-      icon: <RustSVG className="sm:h-11 sm:w-11 h-9 w-9" />,
-      goals: [
-        {
-          name: "Syntax and Semantics",
-          isFinished: true,
-          startedAt: "10/05/2025",
-          finishedAt: "20/05/2025",
-        },
-        {
-          name: "Ownership System",
-          isFinished: false,
-          startedAt: "21/05/2025",
-          finishedAt: "?",
-        },
-        {
-          name: "Concurrency and Parallelism",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Traits and Generics",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Lifetimes and Borrow Checker",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Macros and Metaprogramming",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Web Development",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Asynchronous Programming",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Networking",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Database and ORM",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Cryptography",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "GUI Development",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-        {
-          name: "Testing",
-          isFinished: false,
-          startedAt: "?",
-          finishedAt: "?",
-        },
-      ],
-    },
-    {
-      name: "javascript",
-      icon: <JavaScriptSvg className="sm:h-11 sm:w-11 h-9 w-9" />,
-      goals: [
-        {
-          name: "Javascript Variables",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Datatypes",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Prototypes",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Type Casting",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Indexed collections",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Keyed Collections",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Equality Comparisons",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Loops and Iterations",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Control Flow",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Functions",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "DOM APIs",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Strict Mode",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "'This' Keyword",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Asynchronous JavaScript",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Event Loop",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Working with APIs",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Modules",
-          isFinished: true,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-        {
-          name: "Javascript Iterators and Generators",
-          isFinished: false,
-          finishedAt: "?",
-          startedAt: "?",
-        },
-      ],
-    },
-  ];
-
   const { skill } = await params;
 
-  for (const roadmap of roadmaps) {
+  for (const roadmap of ROADMAPS) {
     if (roadmap.name === skill) {
       currentRoadmap.push(roadmap);
       break;
@@ -250,7 +38,7 @@ export default async function RoadmapRoute({
             </StandOutDescription>
           </div>
           <div>
-            <Link href={'/'}>
+            <Link href={"/"}>
               <MainScreenButton btnContent="Página inicial" />
             </Link>
           </div>
